@@ -1,0 +1,146 @@
+/* Top menu */
+header{
+  width: 100%;
+  height: 120px;
+  background-color: #fff;
+  z-index: 9999999;
+}
+nav{
+  width: 1300px;
+  height: inherit;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav h1{
+  flex: 2;
+}
+nav h1 img{
+  width: 316px;
+  height: 64px;
+}
+
+.gnb{
+  height: 120px;
+  flex: 6;
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  z-index: 9999;
+}
+.gnb>.main{
+  width: 130px;
+  font-size: 24px;
+  color: #555;
+}
+.gnb>.main>a{
+  display: block;
+  position: relative;
+  width: inherit;
+  height: 120px;
+  line-height: 120px;
+  font-family: "Exo", sans-serif;
+  transition: 0.35s;
+}
+.gnb>.main:nth-of-type(3){width: 110px;}
+.gnb>.main:nth-of-type(4){width: 110px;}
+.gnb>.main a:before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 4px;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #1ABDE7;
+  border-radius: 3px;
+  transition: 0.35s;
+}
+.gnb>.main:hover>a{color: #1ABDE7; font-weight: bold;}
+.gnb>.main:hover>a:before{width: 90%;}
+
+/* Sub Menu*/
+.sub{
+  display: none;
+  width: 100%;
+  background-color: #fff;
+}
+.sub li{
+  height: 51px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sub li:last-child{border-bottom: none;}
+.sub li a {
+	color: #666;
+	font-size: 14px;
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+.main .sub li:not(:nth-of-type(2)) .sub li a{padding: 0 30px;}
+.sub li:hover{background-color: #1ABDE7;}
+.sub li:hover>a{color: #fff;}
+
+/* 비주얼 이미지 */
+#sub1_1{
+  background: url(../image/brand.jpg) no-repeat center/cover;
+  height: 700px;
+}
+#sub1_2{
+  background: url(../image/service.jpg) no-repeat center/cover;
+  height: 700px;
+}
+#sub2_1{
+  background: url(../image/petcare.jpg) no-repeat center/cover;
+  height: 700px;
+}
+#sub2_2{
+  background: url(../image/data.jpg) no-repeat center/cover;
+  height: 700px;
+}
+#sub3{
+  background: url(../image/kit.jpg) no-repeat center/cover;
+  height: 700px;
+}
+#sub4{
+  background: url(../image/app_bg.jpg) no-repeat center/cover;
+  height: 700px;
+  position: relative;
+}
+.sub4 img{
+  border-radius: 40px;
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  bottom: 120px;
+  left: 300px;
+}
+.sub4 p{
+  color: #1ABDE7;
+  font-size: 35px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 130px;
+  left: 520px;
+}
+.sub4 p strong{
+  display: block;
+  font-size: 40px;
+  color: #fff;
+}
+#sub5{
+  background: url(../image/news.jpg) no-repeat center/cover;
+  height: 700px;
+}
+#sub6_1{
+  background: url(../image/contact1.jpg) no-repeat center/cover;
+  height: 700px;
+}
+#sub6_2{
+  background: url(../image/contact2.jpg) no-repeat center/cover;
+  height: 700px;
+}
